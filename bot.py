@@ -1,6 +1,6 @@
 import telepot
 import urllib3
-import requests
+from flask import request
 
 proxy_url = "http://proxy.server:3128"
 telepot.api._pools = {
