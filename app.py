@@ -15,7 +15,7 @@ bot.setWebhook("https://studyuganda.pythonanywhere.com/{}".format(secret), max_c
 
 app = Flask(__name__)
 
-@app.route('/{}'.format(secret), methods=["POST"])
+@app.route('{}'.format(secret), methods=["POST"])
 def telegram_webhook():
     update = request.get_json()
     if "message" in update:
